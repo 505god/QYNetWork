@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QYNetManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[QYNetManager sharedInstance] loadDataWithParameters:@{@"method":@"info",@"short_conn":@(0)} path:@"api/v1/vpan" methodType:QYRequestType_POST success:^(id responseObject) {
+        
+    } failure:^(NSString *errorInfo) {
+        
+    }];
 }
 
 

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185C8CD510ECBB766A150407 /* Pods_QYNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E474BFC56361658F72809B /* Pods_QYNetWork.framework */; };
 		5D82EDEA1F55321700552488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EDE91F55321700552488 /* main.m */; };
 		5D82EDED1F55321700552488 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EDEC1F55321700552488 /* AppDelegate.m */; };
 		5D82EDF01F55321700552488 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EDEF1F55321700552488 /* ViewController.m */; };
 		5D82EDF31F55321700552488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D82EDF11F55321700552488 /* Main.storyboard */; };
 		5D82EDF51F55321700552488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D82EDF41F55321700552488 /* Assets.xcassets */; };
 		5D82EDF81F55321700552488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D82EDF61F55321700552488 /* LaunchScreen.storyboard */; };
+		5D82EE021F553A9E00552488 /* QYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EE011F553A9E00552488 /* QYNetwork.m */; };
+		5D82EE051F5547AA00552488 /* QYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EE041F5547AA00552488 /* QYNetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026529B566EC9FFBFC18AD33 /* Pods-QYNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-QYNetWork/Pods-QYNetWork.release.xcconfig"; sourceTree = "<group>"; };
 		5D82EDE51F55321700552488 /* QYNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D82EDE91F55321700552488 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D82EDEB1F55321700552488 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,12 @@
 		5D82EDF41F55321700552488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D82EDF71F55321700552488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D82EDF91F55321700552488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D82EE001F553A9E00552488 /* QYNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYNetwork.h; sourceTree = "<group>"; };
+		5D82EE011F553A9E00552488 /* QYNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYNetwork.m; sourceTree = "<group>"; };
+		5D82EE031F5547AA00552488 /* QYNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYNetManager.h; sourceTree = "<group>"; };
+		5D82EE041F5547AA00552488 /* QYNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYNetManager.m; sourceTree = "<group>"; };
+		94A9D03BF014D7CF5F73541B /* Pods-QYNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QYNetWork/Pods-QYNetWork.debug.xcconfig"; sourceTree = "<group>"; };
+		B7E474BFC56361658F72809B /* Pods_QYNetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QYNetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C8CD510ECBB766A150407 /* Pods_QYNetWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D9F5F893B05E9BB8032E08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7E474BFC56361658F72809B /* Pods_QYNetWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		546B6674FD5FA6DC62BDD44D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94A9D03BF014D7CF5F73541B /* Pods-QYNetWork.debug.xcconfig */,
+				026529B566EC9FFBFC18AD33 /* Pods-QYNetWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5D82EDDC1F55321700552488 = {
 			isa = PBXGroup;
 			children = (
 				5D82EDE71F55321700552488 /* QYNetWork */,
 				5D82EDE61F55321700552488 /* Products */,
+				546B6674FD5FA6DC62BDD44D /* Pods */,
+				03D9F5F893B05E9BB8032E08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +92,7 @@
 				5D82EDEC1F55321700552488 /* AppDelegate.m */,
 				5D82EDEE1F55321700552488 /* ViewController.h */,
 				5D82EDEF1F55321700552488 /* ViewController.m */,
+				5D82EDFF1F553A5400552488 /* Classes */,
 				5D82EDF11F55321700552488 /* Main.storyboard */,
 				5D82EDF41F55321700552488 /* Assets.xcassets */,
 				5D82EDF61F55321700552488 /* LaunchScreen.storyboard */,
@@ -79,6 +110,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5D82EDFF1F553A5400552488 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5D82EE001F553A9E00552488 /* QYNetwork.h */,
+				5D82EE011F553A9E00552488 /* QYNetwork.m */,
+				5D82EE031F5547AA00552488 /* QYNetManager.h */,
+				5D82EE041F5547AA00552488 /* QYNetManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D82EDFC1F55321700552488 /* Build configuration list for PBXNativeTarget "QYNetWork" */;
 			buildPhases = (
+				E950E4EEEC0621733B204683 /* [CP] Check Pods Manifest.lock */,
 				5D82EDE11F55321700552488 /* Sources */,
 				5D82EDE21F55321700552488 /* Frameworks */,
 				5D82EDE31F55321700552488 /* Resources */,
+				B0333A4D3B31A541E65DA527 /* [CP] Embed Pods Frameworks */,
+				BF837608924CBFE40C25E761 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,13 +190,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0333A4D3B31A541E65DA527 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QYNetWork/Pods-QYNetWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF837608924CBFE40C25E761 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QYNetWork/Pods-QYNetWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E950E4EEEC0621733B204683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D82EDE11F55321700552488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D82EDF01F55321700552488 /* ViewController.m in Sources */,
+				5D82EE051F5547AA00552488 /* QYNetManager.m in Sources */,
 				5D82EDED1F55321700552488 /* AppDelegate.m in Sources */,
+				5D82EE021F553A9E00552488 /* QYNetwork.m in Sources */,
 				5D82EDEA1F55321700552488 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +365,7 @@
 		};
 		5D82EDFD1F55321700552488 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A9D03BF014D7CF5F73541B /* Pods-QYNetWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QYNetWork/Info.plist;
@@ -281,6 +377,7 @@
 		};
 		5D82EDFE1F55321700552488 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026529B566EC9FFBFC18AD33 /* Pods-QYNetWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QYNetWork/Info.plist;
@@ -309,6 +406,7 @@
 				5D82EDFE1F55321700552488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
