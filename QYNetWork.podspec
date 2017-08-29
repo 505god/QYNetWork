@@ -17,5 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/505god/QYNetWork.git", :tag => "1.0" }
   s.source_files  = 'QYNetWork/Classes/*.{h,m}'
+  s.dependency "AFNetworking", "~> 3.1.0"
+  s.dependency "RealReachability", "~> 1.1.8"
   s.requires_arc = true
 end
