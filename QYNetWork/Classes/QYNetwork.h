@@ -13,9 +13,6 @@
  */
 typedef void (^CallBackBlock)(NSInteger code,id responseObject);
 
-#define kWeakSelf(type)__weak typeof(type)weak##type = type;
-
-#define kStrongSelf(type)__strong typeof(type)type = weak##type;
 /**
  网络请求
  */

@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kWeakSelf(type)__weak typeof(type)weak##type = type;
+
+#define kStrongSelf(type)__strong typeof(type)type = weak##type;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

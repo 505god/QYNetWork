@@ -8,6 +8,7 @@
 
 #import "QYNetwork.h"
 #import <AFNetworking/AFNetworking.h>
+#import "AppDelegate.h"
 
 @interface QYNetwork ()
 

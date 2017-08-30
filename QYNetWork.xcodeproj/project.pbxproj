@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		185C8CD510ECBB766A150407 /* Pods_QYNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E474BFC56361658F72809B /* Pods_QYNetWork.framework */; };
+		5D490E841F565D6400B2E4AF /* ViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D490E831F565D6400B2E4AF /* ViewControllerViewModel.m */; };
 		5D82EDEA1F55321700552488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EDE91F55321700552488 /* main.m */; };
 		5D82EDED1F55321700552488 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EDEC1F55321700552488 /* AppDelegate.m */; };
 		5D82EDF01F55321700552488 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EDEF1F55321700552488 /* ViewController.m */; };
@@ -16,10 +17,14 @@
 		5D82EDF81F55321700552488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D82EDF61F55321700552488 /* LaunchScreen.storyboard */; };
 		5D82EE021F553A9E00552488 /* QYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EE011F553A9E00552488 /* QYNetwork.m */; };
 		5D82EE051F5547AA00552488 /* QYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EE041F5547AA00552488 /* QYNetManager.m */; };
+		5D82EE0C1F55802300552488 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EE0B1F55802300552488 /* BaseViewModel.m */; };
+		5D82EE0F1F5580C600552488 /* QYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82EE0E1F5580C600552488 /* QYFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		026529B566EC9FFBFC18AD33 /* Pods-QYNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-QYNetWork/Pods-QYNetWork.release.xcconfig"; sourceTree = "<group>"; };
+		5D490E821F565D6400B2E4AF /* ViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerViewModel.h; sourceTree = "<group>"; };
+		5D490E831F565D6400B2E4AF /* ViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerViewModel.m; sourceTree = "<group>"; };
 		5D82EDE51F55321700552488 /* QYNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D82EDE91F55321700552488 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D82EDEB1F55321700552488 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +39,10 @@
 		5D82EE011F553A9E00552488 /* QYNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYNetwork.m; sourceTree = "<group>"; };
 		5D82EE031F5547AA00552488 /* QYNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYNetManager.h; sourceTree = "<group>"; };
 		5D82EE041F5547AA00552488 /* QYNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYNetManager.m; sourceTree = "<group>"; };
+		5D82EE0A1F55802300552488 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		5D82EE0B1F55802300552488 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		5D82EE0D1F5580C600552488 /* QYFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYFileManager.h; sourceTree = "<group>"; };
+		5D82EE0E1F5580C600552488 /* QYFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYFileManager.m; sourceTree = "<group>"; };
 		94A9D03BF014D7CF5F73541B /* Pods-QYNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QYNetWork/Pods-QYNetWork.debug.xcconfig"; sourceTree = "<group>"; };
 		B7E474BFC56361658F72809B /* Pods_QYNetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QYNetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +101,11 @@
 				5D82EDEC1F55321700552488 /* AppDelegate.m */,
 				5D82EDEE1F55321700552488 /* ViewController.h */,
 				5D82EDEF1F55321700552488 /* ViewController.m */,
+				5D490E821F565D6400B2E4AF /* ViewControllerViewModel.h */,
+				5D490E831F565D6400B2E4AF /* ViewControllerViewModel.m */,
+				5D82EE0A1F55802300552488 /* BaseViewModel.h */,
+				5D82EE0B1F55802300552488 /* BaseViewModel.m */,
+				5D82EE091F55801400552488 /* Data */,
 				5D82EDFF1F553A5400552488 /* Classes */,
 				5D82EDF11F55321700552488 /* Main.storyboard */,
 				5D82EDF41F55321700552488 /* Assets.xcassets */,
@@ -119,6 +133,15 @@
 				5D82EE041F5547AA00552488 /* QYNetManager.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5D82EE091F55801400552488 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5D82EE0D1F5580C600552488 /* QYFileManager.h */,
+				5D82EE0E1F5580C600552488 /* QYFileManager.m */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,10 +267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D82EDF01F55321700552488 /* ViewController.m in Sources */,
+				5D82EE0F1F5580C600552488 /* QYFileManager.m in Sources */,
+				5D82EE0C1F55802300552488 /* BaseViewModel.m in Sources */,
 				5D82EE051F5547AA00552488 /* QYNetManager.m in Sources */,
 				5D82EDED1F55321700552488 /* AppDelegate.m in Sources */,
 				5D82EE021F553A9E00552488 /* QYNetwork.m in Sources */,
 				5D82EDEA1F55321700552488 /* main.m in Sources */,
+				5D490E841F565D6400B2E4AF /* ViewControllerViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

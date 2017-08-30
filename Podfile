@@ -10,6 +10,7 @@ target 'QYNetWork' do
 
 pod 'AFNetworking', '~> 3.1.0'
 pod 'RealReachability', '~> 1.1.8'
+pod 'MJRefresh', '~> 3.1.12'
 
 end
 
