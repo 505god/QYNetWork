@@ -25,6 +25,7 @@
     [self addHeader];
     [self addFooter];
     
+    [self.viewModel getCacheDataWithPath:@""];
     [self.tableView.mj_header beginRefreshing];
 }
 

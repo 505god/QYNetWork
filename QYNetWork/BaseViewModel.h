@@ -30,8 +30,8 @@ typedef void(^QYCacheCompletedBlock)(BOOL success,NSString *error);
 ///读取本地数据请求回调
 @property (nonatomic, copy) QYCacheCompletedBlock cacheCompletedBlock;
 
-- (void)loadLastestPage;//刷新
-- (void)loadNextPage;//加载下一页
+- (void)loadLastestPage;//刷新pageIndex=0
+- (void)loadNextPage;//加载下一页pageIndex++
 - (void)loadItemsWithPageNum:(NSInteger)pageNum;
 
 //读取本地数据

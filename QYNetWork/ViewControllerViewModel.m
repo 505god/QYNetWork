@@ -14,11 +14,6 @@
 - (void)loadItemsWithPageNum:(NSInteger)pageNum {
     [super loadItemsWithPageNum:pageNum];
     
-    if (pageNum == 0) {
-        //加载缓存
-        [self getCacheDataWithPath:@""];
-    }
-    
     kWeakSelf(self);
     [[QYNetManager sharedInstance] loadDataWithParameters:@{@"method":@"info",@"short_conn":@(0)} path:@"api/v1/vpan" methodType:QYRequestType_POST success:^(id responseObject) {
         kStrongSelf(self);
