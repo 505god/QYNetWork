@@ -25,7 +25,6 @@
     [self addHeader];
     [self addFooter];
     
-    [self loadCacheData];
     [self.tableView.mj_header beginRefreshing];
 }
 
@@ -51,13 +50,6 @@
     }];
 }
 
-#pragma mark - 缓存
-
-- (void)loadCacheData {
-    [self.viewModel getCacheDataWithPath:NSStringFromClass([self class])];
-}
-
-
 #warning tableView代理未实现
 
 
@@ -69,7 +61,7 @@
         
         __block ViewControllerViewModel *temp_viewModel = _viewModel;
         kWeakSelf(self);
-        _viewModel.requestCompletedBlock = ^(BOOL success,NSString *error,BOOL hasMoreData) {
+        _viewModel.requestCompletedBlock = ^(BOOL success,NSString *error,BOOL hasMoreData,BOOL isBlank) {
             kStrongSelf(self);
             
             [self.tableView.mj_header endRefreshing];
@@ -77,16 +69,20 @@
             
             if (success) {
                 
-                if (!hasMoreData) {
+                if (!hasMoreData) {//是否有更多数据
                     [self.tableView.mj_footer endRefreshingWithNoMoreData];
                 }
                 
-                if (temp_viewModel.refresh) {
-                    //下拉上拉刷新
+                if (isBlank) {
+                    //数据为空
+                    //TODO:添加缺省页面
                 }else {
-                    //上拉刷新
+                    if (temp_viewModel.refresh) {
+                        //下拉上拉刷新
+                    }else {
+                        //上拉刷新
+                    }
                 }
-                
             }else {
                 //TODO:给出错误提示
             }

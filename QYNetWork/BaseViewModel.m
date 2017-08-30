@@ -40,12 +40,7 @@
     
     [self.dataArray addObjectsFromArray:array];
     
-    if (array.count>0) {
-        
-        !self.cacheCompletedBlock ?: self.cacheCompletedBlock(true,nil);
-    }else {
-        !self.cacheCompletedBlock ?: self.cacheCompletedBlock(false,nil);
-    }
+    !self.cacheCompletedBlock ?: self.cacheCompletedBlock(self.dataArray.count>0,nil);
 }
 
 #pragma mark - getter

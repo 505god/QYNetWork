@@ -9,14 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "QYFileManager.h"
 
-typedef NS_ENUM(NSInteger,ResultType) {
-    ResultType_success,
-    ResultType_error,
-    SWVPANConectType_Wifi,
-    SWVPANConectType_Remote
-};
-
-typedef void(^QYRequestCompletedBlock)(BOOL success,NSString *error,BOOL hasMoreData);
+typedef void(^QYRequestCompletedBlock)(BOOL success,NSString *error,BOOL hasMoreData,BOOL isBlank);
 
 typedef void(^QYCacheCompletedBlock)(BOOL success,NSString *error);
 
